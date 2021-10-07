@@ -5,7 +5,7 @@ cat = MasterEtherCAT.MasterEtherCAT(nic)
 ADP = 0x0000 #1台目
 ADDR = 0x0138 #コアレジスタのアドレス
 data = [0]*1
-data[0] = 0x10 | 0x0D
+data[0] = 0x10 | 0x00
 print(data)
 cat.APWR(IDX=0x00, ADP=ADP, ADO=ADDR, DATA=data) #データ書き込み
 (DATA, WKC) = cat.socket_read() #結果を読出し
