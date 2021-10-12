@@ -5,11 +5,14 @@ from scapy.all import *
 from datetime import datetime
 import tkinter
 from tkinter import filedialog
+import os.path
 
 idir = './cap_result'
-file_name = tkinter.filedialog.askdirectory(initialdir = idir)
+file_path = tkinter.filedialog.askopenfilename(initialdir = idir)
+print(f"basename: {os.path.basename(file_path)}")
+file_name = os.path.basename(file_path)
 
-PCAP_filename = file_name
+PCAP_filename = file_path
 
 def parse_pcap(filename):
 
