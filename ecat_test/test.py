@@ -83,7 +83,7 @@ def main():
     EtherCAT_GPIOMode(cat, 0xFFFF)         # EtherCATスレーブのGPIO方向設定　0:入力 1:出力
 
     # -- 1台目のLEDをシフトする
-    TIME = 0.01*2
+    TIME = 0.01
     cat.ADP = 0x0000
 
     flag = 0
@@ -105,9 +105,9 @@ def main():
             # time.sleep(TIME)
             # EtherCAT_GPIO_Out(cat,0x0001<<i);
             # for i in range(3):
-            cat.ADP = 0x0000 - 0
-            EtherCAT_GPIO_Out(cat, 0x0000)
-            time.sleep(TIME)
+            # cat.ADP = 0x0000 - 0
+            # EtherCAT_GPIO_Out(cat, 0x0000)
+            # time.sleep(TIME)
             # cat.ADP = 0x0000 - 1
             # EtherCAT_GPIO_Out(cat, 0x0000)
             # time.sleep(TIME)
