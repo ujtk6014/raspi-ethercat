@@ -97,7 +97,7 @@ def main():
             time.sleep(TIME)
             now = time.time() 
             diff = now - start
-            if diff%7 == 0:
+            if int(diff)%7 == 0:
                 TIME += 0.0001
                 start = now
             else: 
