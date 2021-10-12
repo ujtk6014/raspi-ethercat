@@ -95,12 +95,12 @@ def main():
             cat.ADP = 0x0000 - 0
             EtherCAT_GPIO_Out(cat, 0xFFFF)
             time.sleep(TIME)
-            cat.ADP = 0x0000 - 1
-            EtherCAT_GPIO_Out(cat, 0xFFFF)
-            time.sleep(TIME)
-            cat.ADP = 0x0000 - 2
-            EtherCAT_GPIO_Out(cat, 0xFFFF)
-            time.sleep(TIME)
+            # cat.ADP = 0x0000 - 1
+            # EtherCAT_GPIO_Out(cat, 0xFFFF)
+            # time.sleep(TIME)
+            # cat.ADP = 0x0000 - 2
+            # EtherCAT_GPIO_Out(cat, 0xFFFF)
+            # time.sleep(TIME)
             # for i in range(16):
             # time.sleep(TIME)
             # EtherCAT_GPIO_Out(cat,0x0001<<i);
@@ -108,12 +108,12 @@ def main():
             cat.ADP = 0x0000 - 0
             EtherCAT_GPIO_Out(cat, 0x0000)
             time.sleep(TIME)
-            cat.ADP = 0x0000 - 1
-            EtherCAT_GPIO_Out(cat, 0x0000)
-            time.sleep(TIME)
-            cat.ADP = 0x0000 - 2
-            EtherCAT_GPIO_Out(cat, 0x0000)
-            time.sleep(TIME)
+            # cat.ADP = 0x0000 - 1
+            # EtherCAT_GPIO_Out(cat, 0x0000)
+            # time.sleep(TIME)
+            # cat.ADP = 0x0000 - 2
+            # EtherCAT_GPIO_Out(cat, 0x0000)
+            # time.sleep(TIME)
             # EtherCAT_GPIO_Out(cat,0x0000);
 
             # for i in range(0xFFFF):
