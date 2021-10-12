@@ -6,7 +6,7 @@ from datetime import datetime
 import tkinter
 from tkinter import filedialog
 
-idir = '.'
+idir = './cap_result'
 file_name = tkinter.filedialog.askdirectory(initialdir = idir)
 
 PCAP_filename = file_name
