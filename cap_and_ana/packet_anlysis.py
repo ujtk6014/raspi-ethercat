@@ -7,6 +7,7 @@ import tkinter
 from tkinter import filedialog
 import os.path
 
+
 idir = './cap_result'
 file_path = tkinter.filedialog.askopenfilename(initialdir = idir)
 print(f"basename: {os.path.basename(file_path)}")
