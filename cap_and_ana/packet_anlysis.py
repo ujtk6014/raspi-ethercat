@@ -3,10 +3,13 @@
 
 from scapy.all import *
 from datetime import datetime
+import tkinter
+from tkinter import filedialog
 
-# ----->　設定値ここから
-PCAP_filename = "sample.pcap"
-# <-----　設定値ここまで
+idir = '.'
+file_name = tkinter.filedialog.askdirectory(initialdir = idir)
+
+PCAP_filename = file_name
 
 def parse_pcap(filename):
 
