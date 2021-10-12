@@ -88,13 +88,19 @@ def main():
 
     flag = 0
     CNT = 0
-
+    start = time.time()
     try:
         while 1:
             # time.sleep(TIME)
             cat.ADP = 0x0000 - 0
             EtherCAT_GPIO_Out(cat, 0xFFFF)
             time.sleep(TIME)
+            now = time.time() - start
+            if now%7 == 0:
+                TIME += 0.01
+                start = now
+            else: 
+                pass
             # cat.ADP = 0x0000 - 1
             # EtherCAT_GPIO_Out(cat, 0xFFFF)
             # time.sleep(TIME)
