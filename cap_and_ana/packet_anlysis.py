@@ -18,6 +18,7 @@ PCAP_filename = file_path
 def parse_pcap(filename):
 
     packets = rdpcap(filename)
+    packets.summary()
 
     print("----------------------------------")
     for cnt, packet in enumerate(packets, 1):
